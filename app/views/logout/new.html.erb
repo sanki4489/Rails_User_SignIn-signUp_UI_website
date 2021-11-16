@@ -1,0 +1,14 @@
+<h1 class="text-primary">Sign in</h1>
+<%= form_with url: sign_in_path do |f| %>
+    <div class="md-3">
+        <%= f.label :email %>   
+        <%= f.text_field :email, placeholder: "abc@gmail.com", class: "form-control" %><br />
+    </div>
+    <div class="md-3">
+        <%= f.label :password %>     
+        <%= f.password_field :password, placeholder: "password", class:"form-control" %><br />
+    </div>
+    <div class="md-3">  
+        <%= f.submit "Sign In", class: "btn btn-primary" %> 
+    </div>    
+  <% end %>   
